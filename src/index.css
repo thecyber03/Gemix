@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('../fonts/ClashDisplay-Regular.woff');
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Light.ttf');
+}
+@font-face {
+  font-family: 'Badeen';
+  src: url('../fonts/Badeen.ttf');
+}
+
+@font-face {
+  font-family: 'Aref';
+  src: url('../fonts/Aref.ttf');
+}
+@font-face {
+  font-family: 'Aquire';
+  src: url('../fonts/Aquire-BW0ox.otf');
+}
+@font-face {
+  font-family: 'Aadil';
+  src: url('../fonts/Aadil Aadil.ttf');
+}
+@font-face {
+  font-family: 'Akram';
+  src: url('../fonts/Akram Unicode Akram Unicode.ttf');
+}
+
+
+
+/* Hide scrollbars globally */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 14px;
+  background: #37adcb;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-y: scroll; /* allow scrolling */
+  overflow-x: hidden;
+  z-index: 0; /* ensure body stays above ::before */
+}
+
+/* Gradient Blur Background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200vw;
+  height: 200vh;
+  background:
+      radial-gradient(circle at 0% 5%, #ffffff 0%, transparent 50%),
+      radial-gradient(circle at 0% 5%, #ffffff 0%, transparent 50%),
+      radial-gradient(circle at 15% 20%, #b3e5fc 0%, transparent 20%), /* light blue */
+      radial-gradient(circle at 20% 30%, #80deea 0%, transparent 20%), /* cyan */
+      radial-gradient(circle at 30% 40%, #b39ddb 0%, transparent 20%), /* light purple */
+      radial-gradient(circle at 50% 60%, #81d4fa 0%, transparent 20%), /* vibrant sky blue */
+      radial-gradient(circle at 90% 100%, #4dd0e1 0%, transparent 20%), /* turquoise */
+      radial-gradient(circle at 80% 70%, #4fc3f7 0%, transparent 20%), /* vibrant blue */
+      radial-gradient(circle at 30% 30%, #ce93d8 0%, transparent 20%), /* soft violet */
+      radial-gradient(circle at 40% 70%, #ffffff 0%, transparent 40%),
+      radial-gradient(circle at 90% 100%, #ffffff 0%, transparent 60%);
+  filter: blur(120px);
+  opacity: 0.55;
+  z-index: -1;
+  pointer-events: none;
+}
