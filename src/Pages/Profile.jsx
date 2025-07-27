@@ -50,13 +50,13 @@ export default function Profile() {
     onSubmit={handleSubmit}
     className="bg-slate-800 w-full max-w-md p-6 rounded-2xl shadow-lg flex flex-col gap-6"
   >
-    <h2 className="text-3xl font-[Aquire] text-center text-black mb-4">
+    <h2 className="text-3xl font-[Aquire] text-center text- mb-4">
       👤 Set Your Profile
     </h2>
 
     {/* Image Upload Section */}
     <label htmlFor="dpInput" className="cursor-pointer flex flex-col items-center">
-      <div className="w-28 h-28 rounded-full bg-slate-700 flex items-center justify-center overflow-hidden border-4 border-black shadow-md hover:scale-105 transition">
+      <div className="w-28 h-28 rounded-full bg-slate-700 flex items-center justify-center overflow-hidden border-4 border-blac shadow-md hover:scale-105 transition">
         {dpPreview ? (
           <img src={dpPreview} alt="Preview" className="w-full h-full object-cover" />
         ) : (
