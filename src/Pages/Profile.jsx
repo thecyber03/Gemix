@@ -48,7 +48,7 @@ export default function Profile() {
     <div className="min-h-screen bg-gradient-to-br from-black to-slate-900 text-white flex items-center justify-center p-4">
   <form
     onSubmit={handleSubmit}
-    className="bg-slate-800 w-full max-w-md p-6 rounded-2xl shadow-lg flex flex-col gap-6"
+    className="bg-[#0f2027] w-full max-w-md p-6 rounded- shadow-lg flex flex-col gap-6"
   >
     <h2 className="text-3xl font-[Aquire] text-center text- mb-4">
       👤 Set Your Profile
@@ -56,7 +56,7 @@ export default function Profile() {
 
     {/* Image Upload Section */}
     <label htmlFor="dpInput" className="cursor-pointer flex flex-col items-center">
-      <div className="w-28 h-28 rounded-full bg-slate-700 flex items-center justify-center overflow-hidden border-4 border-blac shadow-md hover:scale-105 transition">
+      <div className="w-28 h-28 rounded-full bg-gradient-to-br from-slate-800 to-black  flex items-center justify-center overflow-hidden border-4 border-blac shadow-md hover:scale-105 transition">
         {dpPreview ? (
           <img src={dpPreview} alt="Preview" className="w-full h-full object-cover" />
         ) : (
@@ -79,7 +79,7 @@ export default function Profile() {
       value={userName}
       onChange={(e) => setUserName(e.target.value)}
       placeholder="Apna Naam Likhdo"
-      className="bg-slate-700 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-"
+      className="bg-gradient-to-br from-slate-800 to-black  text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-"
     />
 
     {/* Submit Button */}

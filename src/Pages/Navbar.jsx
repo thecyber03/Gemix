@@ -16,14 +16,14 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full h-12 px-4 z-50 flex items-center justify-between bg- shadow">
+    <nav className="fixed top-0 left-0 w-full h-12 px-4 z-50 flex items-center justify-between bg-gradient-to-br from-slate-800 to-black shadow">
       
       {/* Left Rounded Div
       <div className="w-8 h-8 bg-red-500 rounded-full"></div> */}
 
         {/* 👤 User Info */}
       <Link to='/profile'>
-      <div className="flex flex-col items-center left- justify-center ml-2">
+      <div className=" ">
   {userDP ? (
     <img
       src={userDP}
@@ -31,7 +31,7 @@ export default function Navbar() {
       className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-red-600 object-cover"
     />
   ) : (
-    <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gray-500 flex items-center justify-center text-xl text-white">👤</div>
+    <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-brshadow-sm  bg-[#0f2027]  flex items-center justify-center text-xl text-white">👤</div>
   )}
   <p className="text-sm text-green-300 font-semibold mt-1">{}</p>
 </div></Link>
